@@ -6,6 +6,7 @@ Simple pandas project.
 
 ```bash
 pip install -r requirements.txt
+pip install openpyxl
 ```
 
 ## Usage
@@ -16,13 +17,13 @@ python simple_analysis.py
 
 ## Files
 
-- `sensor_data.csv`: Input data
+- `sensor_data.xlsx`: Input data
 - `process_sensor_data.py`: Analysis script
-- `sensor_data_analyzed.csv`: Output results
+- `sensor_data_analyzed.xlsx`: Output results
 
 ## What It Does
 
-1. Loads CSV data
+1. Loads excel data
 2. Cleans missing values
 3. Calculates averages by equipment
 4. Flags high temperature readings (>50°C)
@@ -32,3 +33,4 @@ python simple_analysis.py
 
 - Python 3.7+
 - pandas
+- openpyxl
